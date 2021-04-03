@@ -39,18 +39,6 @@
       }]
     },
     {
-      "name": "python3-pyxdg",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pyxdg"
-      ],
-      "sources": [{
-        "type": "file",
-        "url": "https://files.pythonhosted.org/packages/47/6e/311d5f22e2b76381719b5d0c6e9dc39cd33999adae67db71d7279a6d70f4/pyxdg-0.26.tar.gz",
-        "sha256": "fe2928d3f532ed32b39c32a482b54136fe766d19936afc96c8f00645f9da1a06"
-      }]
-    },
-    {
       "name": "liblarch",
       "buildsystem": "simple",
       "build-commands": [
@@ -59,7 +47,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/getting-things-gnome/liblarch",
-        "commit": "17bf0bd71247fc3b73f3b610f67f9b3ab3f02ba5"
+        "commit": "b0840da092f5a78af9089087c50c212541e33436"
       }]
     },
     {
@@ -68,7 +56,7 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/getting-things-gnome/gtg",
-        "commit": "b381aa0378a5bfe206dec8d70757e387cdc9c5f6"
+        "commit": "73d0f406883af2f81ba5892bce9c006388466d5c"
       }
       ]
     }
