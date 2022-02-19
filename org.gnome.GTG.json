@@ -1,5 +1,5 @@
 {
-  "app-id": "org.gnome.GTGDevel",
+  "app-id": "org.gnome.GTG",
   "runtime": "org.gnome.Platform",
   "runtime-version": "41",
   "tags": ["devel", "development", "nightly"],
@@ -126,9 +126,6 @@
     {
       "name": "gtg",
       "buildsystem": "meson",
-      "config-opts" : [
-          "-Dprofile=development"
-      ],
       "sources": [{
         "type": "git",
         "url": "https://github.com/getting-things-gnome/gtg",
