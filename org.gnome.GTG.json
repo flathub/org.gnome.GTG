@@ -127,6 +127,10 @@
         "url": "https://github.com/getting-things-gnome/gtg",
         "tag": "v0.6",
         "commit": "f178348b5393ea1420f1c8399f8082859d01fcae"
+      },
+      {
+        "type": "patch",
+        "path": "patches/gtg-icon-fix.patch"
       }
       ]
     }
