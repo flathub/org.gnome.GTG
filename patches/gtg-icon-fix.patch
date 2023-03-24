@@ -1,0 +1,22 @@
+From ba9db8e68d2bd64ed0d4167be898726ac61436db Mon Sep 17 00:00:00 2001
+From: Samyak Jain <samtan106@gmail.com>
+Date: Sun, 26 Jun 2022 21:30:47 +0530
+Subject: [PATCH] update icon
+
+---
+ GTG/backends/backend_caldav.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/GTG/backends/backend_caldav.py b/GTG/backends/backend_caldav.py
+index b199eeb83..ed97c24bd 100644
+--- a/GTG/backends/backend_caldav.py
++++ b/GTG/backends/backend_caldav.py
+@@ -58,7 +58,7 @@ class Backend(PeriodicImportBackend):
+ 
+     _general_description = {
+         GenericBackend.BACKEND_NAME: 'backend_caldav',
+-        GenericBackend.BACKEND_ICON: 'applications-internet',
++        GenericBackend.BACKEND_ICON: 'network-server',
+         GenericBackend.BACKEND_HUMAN_NAME: _('CalDAV tasks'),
+         GenericBackend.BACKEND_AUTHORS: ['Mildred Ki\'Lya',
+                                          'François Schmidts'],

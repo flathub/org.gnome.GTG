@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.GTG",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "41",
+  "runtime-version": "44",
   "sdk": "org.gnome.Sdk",
   "command": "gtg",
   "finish-args": [
@@ -105,12 +105,12 @@
             "sha256": "5b40dc2b39950e78989d515ce6a2c1131f20cc2c413ba28f8d5b582546b40a4c"
         }
       ]
-    },   
+    },
    {
       "name": "liblarch",
       "buildsystem": "simple",
       "build-commands": [
-        "python3 setup.py install --prefix /app"
+        "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} . --no-build-isolation"
       ],
       "sources": [{
         "type": "git",
@@ -127,6 +127,10 @@
         "url": "https://github.com/getting-things-gnome/gtg",
         "tag": "v0.6",
         "commit": "f178348b5393ea1420f1c8399f8082859d01fcae"
+      },
+      {
+        "type": "patch",
+        "path": "patches/gtg-icon-fix.patch"
       }
       ]
     }
