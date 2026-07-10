@@ -165,8 +165,8 @@
       "sources": [{
         "type": "git",
         "url": "https://github.com/getting-things-gnome/gtg",
-        "tag": "v0.6",
-        "commit": "f178348b5393ea1420f1c8399f8082859d01fcae"
+        "tag": "v0.6.1",
+        "commit": "7c508e5a4ac3071dc0c92bfad2d81e04fb15246e"
       }
       ]
     }
