@@ -9,7 +9,8 @@
     "--socket=fallback-x11",
     "--socket=wayland",
     "--share=network",
-    "--system-talk-name=org.freedesktop.login1"
+    "--system-talk-name=org.freedesktop.login1",
+    "--env=GI_TYPELIB_PATH=/app/lib/girepository-1.0"
   ],
   "cleanup": [
     "/include",
@@ -26,6 +27,22 @@
     "*.pyo"
   ],
   "modules": [
+    {
+        "name": "gtksourceview4",
+        "buildsystem": "meson",
+        "config-opts": [
+            "-Dgir=true",
+            "-Dvapi=false",
+            "-Dgtk_doc=false"
+        ],
+        "sources": [
+            {
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+                "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
+            }
+        ]
+    },
    {
     "name": "python3-meson-python",
     "buildsystem": "simple",
